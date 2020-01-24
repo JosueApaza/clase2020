@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header,nav,aside,footer{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+header,footer{
+    max-height: 200px;
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+header{
+    background-color: brown;
+}
+nav{
+    background-color: burlywood;
+}
+footer{
+    background-color: cadetblue;
+}
+#contenedor{
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: chartreuse;
+}
+#caja{
+    width: 150px;
+    height: 400px;
+    background-color: chocolate;
+    float: left;
+}
+#c1{
+    width: 750px;
+    height: 400px;
+    background-color: coral;
+    float: left;
+}
+#a1,#a2{
+    max-width: 750px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+#a1{background-color: cornsilk;}
+#a2{background-color: crimson;}
