@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+body{
+    background-color: maroon;
+}
+nav{
+    background-color: burlywood;
+}
+#Container{
+    height: 200px;
+    width: 900px;
+    margin: 0 auto;
+    background-color: darkgray;
+    background-image: url('LOGO.png');
+    background-repeat: no-repeat;
+    
+margin: 0 auto;
+}
+#clear{
+    clear: both;
+}
+#contenido{
+    max-height: 300px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: cadetblue;
+}
+#contenedor{
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: chartreuse;
+}
+#c1{
+    width: 750px;
+    height: 400px;
+    background-color: coral;
+    float: left;
+}
+#a1,#a2{
+    max-width: 750px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+#a1{background-color: cornsilk;}
+#a2{background-color: crimson;}
+footer{
+    background-color: cadetblue;
+}
+

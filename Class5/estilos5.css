@@ -46,3 +46,23 @@ footer{
 }
 #a1{background-color: cornsilk;}
 #a2{background-color: crimson;}
+#menu{
+    padding: 0px;
+}
+#menu li{
+    display: inline-block;
+}
+#menu{
+    text-decoration: cyan;
+    font-size: 14px;
+    color: darkblue;
+    float: left;
+    padding: 10px;
+    background-color: darkgoldenrod;
+}
+#clear{
+    clear: both;
+}
+#menu li a:hover{
+    background-color: darkgray;
+}
