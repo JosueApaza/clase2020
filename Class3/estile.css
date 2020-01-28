@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#mensaje{
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: brown;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+#cajita{
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#boton{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: burlywood;
+}
+#resultados{
+    width: 300px;
+    height: auto;
+    padding: 50px;
+    background-color: cadetblue;
+    margin:  0 auto;
+    box-sizing: border-box;
+}

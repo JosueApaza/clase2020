@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estile.css">
+</head>
+<body>
+    <header id="mensaje">
+        <input type="text" class="cajita" placeholder="NAME..." id="Name"><br>
+        <input type="text" class="cajita" placeholder="LAST NAME..." id="Last"><br>
+        <input type="text" class="cajita" placeholder=" BIRTH DATE..." id="Birth"><br>
+        <input type="text" class="cajita" placeholder=" EMAIL..." id="Email"><br>
+        <button id="boton" onclick="calcular()">Enviar</button>
+    </header>
+    <div id="resultados">
+
+    </div>
+    <script>
+        //alert("hola mundo");
+        function calcular(){
+            //var x = document.getElementById("cajita").value;
+            //ar r = 1/3;
+            //var s = 1/4;
+            //alert(2 * Math.pow(7,r))/Math.sqrt(5) + (4*Math.sqrt(21) + 3*Math.pow(5,r))/Math.sqrt(5);
+            var NAME = document.getElementById("Name").value;
+            var LASTNAME = document.getElementById("Last").value;
+            var BIRTHDATE = document.getElementById("Birth").value;
+            var EMAIL = document.getElementById("Email").value;
+            var texto = document.getElementById("resultados");
+            texto.innerHTML = "<b>NAME: </b>"+Name+"<br>"+
+                              "<b>LAST NAME: </b>"+Last+"<br>"+
+                              "<b>BIRTH DATE: </b>"+Birth+"<br>"+
+                              "<b>EMAIL: </b>"+Email+"<br>";
+        }
+        //document.getElementById("boton").click()
+    </script>
+</body>
+</html>
