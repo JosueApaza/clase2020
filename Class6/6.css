@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: brown;
+}
+#caja, #resultado{
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid burlywood;
+    margin: auto;
+    box-sizing: border-box;
+}
+#paises{
+    border-radius: 10px;
+    background-color: cadetblue;
+    height: 30px;
+    width: 200px;
+}
