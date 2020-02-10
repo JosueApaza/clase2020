@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: crimson;
+}
+#caja{
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: cornflowerblue;
+}
+#form{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: auto;
+    background-color: chocolate;
+    border-radius: 10px;
+    color: cornsilk;
+}
+.boton{
+    margin-top: 10px;
+    background-color: cornflowerblue;
+}

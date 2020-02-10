@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <div id="caja">
+        <select name="cursos" id="Cursos" onclick="opcion()">
+            <option value="0"> Cursos</option>
+            <option value="Algebra">Algebra</option>
+            <option value="Fisica">Fisica</option>
+            <option value="Salud">Salud</option>
+        </select>
+        <section id="form">
+            <label for="a">Nota1</label>
+            <input type="text" class="notita" id="nota1">
+            <label for="a">Nota2</label>
+            <input type="text" class="notita" id="nota2">
+            <label for="a">Nota3</label>
+            <input type="text" class="notita" id="nota3">
+            <button class="boton" onclick="agregar()">Agregar</button>
+            <button class="boton" onclick="eliminar()">Eliminar</button>
+        </section>  
+        <br>
+        <section id="cajita">
+            <table id="tablita" border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Curso</th>
+                        <th scope="col">Nota1</th>
+                        <th scope="col">Nota2</th>
+                        <th scope="col">Nota3</th>
+                        <th scope="col">Promedio</th>
+                        <th scope="col" colspan="2">Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>  
+    </div>
+    <script src="8.js"></script>
+</body>
+</html>

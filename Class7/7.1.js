@@ -21,15 +21,40 @@ function agregar(){
     cell1.innerHTML=nombre;
     cell2.innerHTML=DNI;
     cell3.innerHTML=fecha;
-    cell4.innerHTML="<a href='#' onclick='editar()'>Editar</a>";
-    cell5.innerHTML="<a href='#' onclick='eliminar()'>Eliminar</a>";
+    cell4.innerHTML="<a href='#' onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</a>";
+    cell5.innerHTML="<a href='#' onclick='eliminar(this.parentNode.parentNode.rowIndex)'>Eliminar</a>";
     //alert ( nombre +"/"+DNI+"/"+fecha);
 }
 function listar(){}
-function editar(){
-    alert("Seleccionó editar");
+function editar(x){
+    //alert("Seleccionó editar");
+    var nom = tabla.rows[x].cells[1].innerHTML;
+    var dni = tabla.rows[x].cells[2].innerHTML;
+    var fec = tabla.rows[x].cells[3].innerHTML;
+    document.getElementById("nombre").value=nom;
+    document.getElementById("DNI").value=dni;
+    document.getElementById("Fecha/Nac.").value=fec;
+    document.getElementById("opc").value=1;
 }
-function eliminar(){
-    alert("Seleccionó eliminar");
+function eliminar(x){
+    //alert("Seleccionó eliminar");
+    if (confirm("¿Desea Eliminar?")){
+        document.getElementById("tablita").deleteRow(x);
+        alert("Eliminado Correctamente...");
+    }else{
+        alert("Operación Cancelada...");
+    }
 }
-function limpiar(){}
+function limpiar(){
+    document.getElementById("nombre").value="";
+    document.getElementById("DNI").value="";
+    document.getElementById("Fecha/Nac.").value="";
+    document.getElementById("nombre").focus();
+}
+function actualizar(){
+    tabla.rows[rindex].cells[1].innerHTML=document.getElementById("nombre").value;
+    tabla.rows[rindex].cells[1].innerHTML=document.getElementById("DNI").value;
+    abla.rows[rindex].cells[1].innerHTML=document.getElementById("Fecha/Nac.").value;
+    limpiar();
+    rindex=0;
+}
