@@ -16,14 +16,13 @@
             <option value="Salud">Salud</option>
         </select>
         <section id="form">
-            <label for="a">Nota1</label>
-            <input type="text" class="notita" id="nota1">
-            <label for="a">Nota2</label>
-            <input type="text" class="notita" id="nota2">
-            <label for="a">Nota3</label>
-            <input type="text" class="notita" id="nota3">
-            <button class="boton" onclick="agregar()">Agregar</button>
-            <button class="boton" onclick="eliminar()">Eliminar</button>
+            <label for="a" class="titulo">Nota-1</label>
+            <input type="number" class="notita" placeholder="Nota 1" id="n1">
+            <label for="a" class="titulo">Nota-2</label>
+            <input type="number" class="notita" placeholder="Nota 2" id="n2" >
+            <label for="a" class="titulo">Nota3</label>
+            <input type="number" class="notita" placeholder="Nota 3" id="nota3">
+            <button class="boton" onclick="agregar()" id="add">Agregar</button>
         </section>  
         <br>
         <section id="cajita">
@@ -43,6 +42,8 @@
                 </tbody>
             </table>
         </section>  
+        <label for="a">Ponderado</label>
+        <input type="text" class="cajita" id="ponderado" value="0" disabled>
     </div>
     <script src="8.js"></script>
 </body>

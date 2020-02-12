@@ -14,8 +14,8 @@ body{
     background-color: cornflowerblue;
 }
 #form{
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     padding: 20px;
     margin: auto;
     background-color: chocolate;
@@ -24,5 +24,5 @@ body{
 }
 .boton{
     margin-top: 10px;
-    background-color: cornflowerblue;
+    background-color: aliceblue;
 }
