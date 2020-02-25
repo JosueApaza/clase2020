@@ -43,8 +43,14 @@
         function agregar(){
             nom = $("#nombre").val();
             apell = $("#apellidos").val();
-            var fila = "<tr><td>"+nom+"</td><td>"+apell+"</td><td><a href = '#'><i class='fa fa-pencil-square-o' aria-hidden='true'>"+"</i></a></td><td><a href='#'><i class='fa fa-trash' aria-hidden='true'></i></a></td></tr>";
+            var fila = "<tr><td>"+nom+"</td><td>"+apell+"</td><td><a href = '#' onclick='editar()'><i class='fa fa-pencil-square-o' aria-hidden='true'>"+"</i></a></td><td><a href='#' onclick='eliminar()'><i class='fa fa-trash' aria-hidden='true'></i></a></td></tr>";
             $("#tablita").append(fila);
+        }
+        function editar(){
+            alert("seleccionó editar");
+        }
+        function eliminar(){
+            alert("seleccionó eliminar");
         }
     </script>
 </body>
